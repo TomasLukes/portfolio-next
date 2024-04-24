@@ -1,4 +1,5 @@
 import { ReactElement } from "react"
+import Image from "next/image"
 
 import { ProjectCardSmProps } from "@/components/ProjectCard/prop"
 
@@ -6,8 +7,10 @@ const ProjectCardSm = ({ name, description, img, url, ghUrl }: ProjectCardSmProp
   return (
     <article className="flex flex-col max-w-sm bg-neutral-800 border border-gray-700 rounded-lg shadow-md">
       <a href={`${url}`} rel="noreferrer" target="_blank" aria-label={`See live page of ${name}`}>
-        <img className="rounded-t-lg"
-          src={`/assets/images/projects-screenshots/${img}`} alt="" 
+        <Image 
+          src={`/assets/images/projects-screenshots/${img}`}
+          alt=""
+          className="rounded-t-lg"
         />
       </a>
       <div className="flex-grow px-8 pt-5">

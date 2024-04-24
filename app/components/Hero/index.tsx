@@ -1,10 +1,11 @@
 import { ReactElement } from "react"
+import Image from "next/image"
 
 import TechStack from "@/components/TechStack"
 
 const Hero = (): ReactElement => {
   return (
-    <section id="hero" className="grid place-content-center">
+    <section id="hero" className="min-h-[100vh - 72px] grid place-content-center">
       <div className="flex">
         <div className="w-1/2">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold whitespace-nowrap md:whitespace-normal mb-1 md:mb-2">
@@ -37,8 +38,12 @@ const Hero = (): ReactElement => {
           </div>
         </div>
         <div className="w-1/2">
-          <img className="w-28 md:w-60 lg:w-80 rounded-full object-cover ml-auto md:mr-20 border-solid border-2 border-neutral-300 border-opacity-50"
-            src="/assets/images/profile-photo.jpg" alt="" 
+          <Image
+            src="/assets/images/profile-photo/profile-photo.jpg"
+            alt="" 
+            className="w-28 md:w-60 lg:w-80 rounded-full object-cover ml-auto md:mr-20 border-solid border-2 border-neutral-300 border-opacity-50"
+            width={320}
+            height={320}
           />
           <div className="container blob-container">
             <div className="blob-1 blob"></div>
@@ -53,18 +58,7 @@ const Hero = (): ReactElement => {
       <p className="md:hidden container text-sm mx-auto text-justify mt-3 text-neutral-200">
       Umím všechno? Zdaleka ne. Ale neustále se snažím vzdělávat a posouvat o kus dále, tak abych vždy doručil stránky, které budou zákazníci i návštěvníci rádi používat.
       </p>
-        <TechStack />
-      <svg className="hidden">
-        <filter id='noiseFilter'>
-          <feTurbulence 
-            type='fractalNoise' 
-            baseFrequency='0.925' 
-            stitchTiles='stitch'/>
-          <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
-              <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
-              <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
-        </filter>
-      </svg>
+      <TechStack />
     </section>
   )
 }

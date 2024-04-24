@@ -1,5 +1,7 @@
 import { ReactElement } from "react"
 
+import { bioData } from "@/components/Bio/data"
+
 const Bio = (): ReactElement => {
   return (
     <div className="">
@@ -7,26 +9,14 @@ const Bio = (): ReactElement => {
         Další informace
       </h5>
       <div className="md:w-3/5 grid grid-cols-2 gap-4 pb-8 md:pb-12">
-        <div className="flex flex-col">
-          <p>Jméno:</p>
-          <p className="font-medium">Tomáš Lukeš</p>
-        </div>
-        <div className="flex flex-col">
-          <p>Věk:</p>
-          <p className="font-medium">29 let</p>
-        </div>
-        <div className="flex flex-col">
-          <p>Lokalita:</p>
-          <p className="font-medium">Praha, ČR</p>
-        </div>
-{/*     <div className="flex flex-col">
-          <p>Možný nástup:</p>
-          <p className="font-medium">srpen/2023</p>
-        </div> */}
-        <div className="flex flex-col">
-          <p>Anglický jazyk:</p>
-          <p className="font-medium">úroveň B2</p>
-        </div>
+        {bioData.map(({label, value}) => {
+          return (
+            <div key={label} className="flex flex-col">
+              <p>{label}</p>
+              <p className="font-medium">{value}</p>
+            </div>
+          )
+        })}
       </div>
       <div className="md:w-3/5 flex items-center gap-6 md:gap-8">
         <h5 className="text-lg md:text-xl font-semibold">
