@@ -3,7 +3,7 @@ import { ReactElement } from "react"
 import HeroIllustration from "@/components/Hero/HeroIllustration"
 import HeroText from "@/components/Hero/HeroText"
 import HeroIcons from "@/components/Hero/HeroIcons"
-import Techstack from "@/components/Techstack"
+import Techstack from "../Techstack"
 
 const Hero = (): ReactElement => {
   return (
@@ -14,7 +14,7 @@ const Hero = (): ReactElement => {
           <HeroIcons />
         </div>
         <HeroIllustration />
-        </div>
+      </div>
         {/* TODO: Make mobile text to component */}
         <p className="md:hidden container text-sm mx-auto text-justify mt-6">
           {`Hello 👋 My name is Tomáš and I'm a frontend developer from Prague, currently working on fintech projects for akcenta.digital`}
