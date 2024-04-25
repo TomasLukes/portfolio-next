@@ -1,6 +1,6 @@
 import { ReactElement } from "react"
 
-import TechStackItem from "@/components/TechStack/TechStackItem";
+import TechStackItem from "./TechStackItem";
 
 import { techstackData } from "@/components/TechStack/data";
 
@@ -13,7 +13,7 @@ const TechStack = (): ReactElement => {
       <ul className="flex flex-wrap gap-4 text-sm md:text-base items-center justify-center md:justify-start">
         {techstackData.map(item => {
           return (
-            <TechStackItem 
+            <TechStackItem
               key={item.name}
               name={item.name}
               iconSvg={item.iconSvg}

@@ -1,6 +1,6 @@
 import Icons from "@/components/Icons";
 
-import { ITechStackItem } from "@/components/TechStack/prop";
+import { ITechStackItem } from "./prop";
 
 export const techstackData: ITechStackItem[] = [
     {

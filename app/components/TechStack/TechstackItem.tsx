@@ -1,7 +1,7 @@
 import { ReactElement } from "react"
 import Image from "next/image";
 
-import { ITechStackItem } from "@/components/TechStack/prop";
+import { ITechStackItem } from "./prop";
 
 const TechStackItem = ({name, iconSvg, iconUrl }: ITechStackItem): ReactElement => {
     return (
