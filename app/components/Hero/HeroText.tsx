@@ -1,11 +1,5 @@
 import { ReactElement } from "react"
 
-import HeroIllustration from "@/components/Hero/HeroIllustration"
-import HeroIcons from "@/components/Hero/HeroIcons"
-import TechStack from "@/components/Techstack"
-
-
-
 const HeroText = (): ReactElement => {
   return (
     <>
@@ -24,9 +18,6 @@ const HeroText = (): ReactElement => {
             }
         </p>
     </>
-/* 
-      
-       */
   )
 }
 
