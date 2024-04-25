@@ -1,17 +1,15 @@
 
 export type ProjectCardLgProps = {
-    imgHorizontal: string,
-    imgVertical: string,
-    database: string
+    database?: string
 } & IProjectCard
 
 export type ProjectCardSmProps = {
-    img: string
 } & IProjectCard
 
 export interface IProjectCard {
     name: string,
     description: string,
+    img: string
     ghUrl: string,
     url: string,
 }

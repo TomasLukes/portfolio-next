@@ -6,7 +6,7 @@ import Timeline from "@/components/Timeline"
 
 const About = (): ReactElement => {
   return (
-    <section id="about" className="pt-12 md:pt-28">
+    <section id="about" className="pt-16 md:pt-28">
       <div className="flex flex-col md:flex-row mx-auto">
         <div className="md:w-3/5 lg:w-2/3">
           <AboutIntro />

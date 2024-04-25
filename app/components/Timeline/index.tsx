@@ -3,7 +3,7 @@ import { ReactElement } from "react"
 
 const Timeline = (): ReactElement => {
   return (
-    <ol id="timeline" className="h-full border-l-4 border-neutral-200 ">
+    <ol id="timeline" className="h-full ml-4 md:ml-0 border-l-4 border-neutral-200 ">
       <li className="pl-8 pb-4 pt-6 relative">
         <Image
           src="/assets/icons/jobs/akcenta.png"
@@ -17,7 +17,7 @@ const Timeline = (): ReactElement => {
           <span>akcenta.digital</span><span> • </span><span>07/2023</span>
         </div>
         <p className="text-sm">
-        Vývoj strategických fintech projektů za pomoci moderních technologií (React, Next.js, TS, tailwindcss a další.)
+          Developing strategic projects for fintech using modern technologies (React, Next.js, TypeScript, Tailwind CSS, and others).
         </p>
       </li>
       <li className="pl-8 pb-8 pt-6 relative">
@@ -28,12 +28,12 @@ const Timeline = (): ReactElement => {
           width={32}
           height={32}
         />
-        <h5 className="text-lg font-semibold">Učitel IT</h5>
+        <h5 className="text-lg font-semibold">ICT teacher</h5>
         <div className="pb-2 text-sm">
-          <span>ZŠ Hostýnská</span><span> • </span><span>09/2019-06/2023</span>
+          <span>ZS Hostynska</span><span> • </span><span>09/2019-06/2023</span>
         </div>
         <p className="text-xs">
-          Výuka informatiky, zavedení programování do učebního plánu. Podpora při přechodu školy k digitalizaci.
+          {`Teaching computer science, implementing programming into the curriculum, supporting the school's transition to digitalization.`}
         </p>
       </li>
 
@@ -45,22 +45,22 @@ const Timeline = (): ReactElement => {
           width={32}
           height={32}
         />
-        <h5 className="text-lg font-semibold">Koordinátor postprodukce</h5>
+        <h5 className="text-lg font-semibold">Post Production Coordinator</h5>
         <div className="text-sm pb-2">
-          <span>Česká televize</span><span> • </span><span>07/2018-07/2020</span>
+          <span>Czech public TV</span><span> • </span><span>07/2018-07/2020</span>
         </div>
         <p className="text-xs">
-          Plánování a řízení audiovizuální postprodukce filmů, seriálů a dokumentů. Koordinace spolupráce různých oddělení napříč organizací.
+          Managing post-production of movies, TV series and documentaries. Ensuring smooth collaboration with departments across the organization.
         </p>
       </li>
 
       <li className="pl-8 pb-8 relative">
-        <h5 className="text-lg font-semibold">Technik zvuku</h5>
+        <h5 className="text-lg font-semibold">Audio Engineer</h5>
         <div className="text-sm pb-2">
-          <span>Česká televize</span><span> • </span><span>09/2013-06/2018</span>
+          <span>Czech public TV</span><span> • </span><span>09/2013-06/2018</span>
         </div>
         <p className="text-xs">
-          Správa a obsluha zvukových zařízení (HW / SW), spolupráce na dodání požadovaného technického řešení pro daný projekt.
+          Working with audio equipment (hardware/software), collaboration in delivering the required technical solutions for a given project.
         </p>
       </li>
 
@@ -72,12 +72,12 @@ const Timeline = (): ReactElement => {
           width={32}
           height={32}
         />
-        <h5 className="text-lg font-semibold">Audiovizuální technika</h5>
+        <h5 className="text-lg font-semibold">Audiovisual technology</h5>
         <div className="text-sm pb-2">
-          <span>SPŠST Panská</span><span> • </span><span>09/2009-06/2013</span>
+          <span>SPSST Panska</span><span> • </span><span>09/2009-06/2013</span>
         </div>
         <p className="text-xs">
-          Středoškolské vzdělání technického směru s maturitou, zaměřeno na audiovizuální techniku.
+          High school education in a technical field with a diploma, focused on audiovisual technology.
         </p>
       </li>
 
