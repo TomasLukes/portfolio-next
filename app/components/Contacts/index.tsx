@@ -8,7 +8,7 @@ const Contacts = (): ReactElement => {
 
   if (state.succeeded) {
     return (
-      <div className="pt-12 md:pt-28 mb-16 md:mb-32">
+      <div className="pt-12 md:pt-28 pb-16 md:pb-32">
         <p className="mx-auto w-fit text-xl md:text-2xl border-solid border-l-8 pl-2 border-yellow-500" >
           Your message has been successfully sent. 🎉 
           <br/>
@@ -20,7 +20,7 @@ const Contacts = (): ReactElement => {
   }
 
   return (
-    <section id="contacts" className="pt-12 md:mt-24 mb-16 md:mb-32 max-w-[720px] mx-auto" >
+    <section id="contacts" className="max-w-[720px] mx-auto pt-12 md:mt-24 pb-16 md:pb-32 " >
       <h2 className="w-fit mx-auto text-2xl md:text-4xl font-bold mb-3 md:mb-9 border-solid border-l-8 pl-2 border-yellow-500">
         Contact me
       </h2>

@@ -21,7 +21,7 @@ const Bio = (): ReactElement => {
           )
         })}
       </div>
-      <div className="md:w-3/5 flex items-center gap-6 md:gap-8">
+      <div className="md:w-3/5 flex items-center gap-2 md:gap-4">
         <h5 className="text-lg md:text-xl font-semibold">
           Complete CV in PDF format
         </h5>

@@ -7,7 +7,7 @@ const AboutIntro = (): ReactElement => {
           About me
         </h2>
         <p className="md:w-3/5 pb-2 md:pb-4">
-          {`For over a year now, I've been deeply immersed in web development. I have experience with a wide range of technologies, 
+          {`I have experience with a wide range of technologies, 
             including React, Tailwind CSS, Sass, and many others. Currently, I'm learning Next.js and TypeScript while working on my latest project.
           `}
         </p>
