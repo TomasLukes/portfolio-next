@@ -3,7 +3,7 @@ import { ReactElement } from "react"
 import HeroIllustration from "@/components/Hero/HeroIllustration"
 import HeroText from "@/components/Hero/HeroText"
 import HeroIcons from "@/components/Hero/HeroIcons"
-import Techstack from "../Techstack"
+import TechStack from "@/components/TechStack"
 
 const Hero = (): ReactElement => {
   return (
@@ -24,7 +24,7 @@ const Hero = (): ReactElement => {
             and if you're looking for a team member with the potential for rapid growth and the ability to learn constantly, keep reading.`
           }
         </p>
-      <Techstack />
+      <TechStack />
     </section>
   )
 }

@@ -1,8 +1,8 @@
 import Icons from "@/components/Icons";
 
-import { ITechstackItem } from "@/components/Techstack/prop";
+import { ITechStackItem } from "@/components/TechStack/prop";
 
-export const techstackData: ITechstackItem[] = [
+export const techstackData: ITechStackItem[] = [
     {
         name: "React",
         iconSvg: Icons.techstack.react,

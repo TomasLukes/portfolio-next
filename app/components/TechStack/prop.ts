@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-export interface ITechstackItem {
+export interface ITechStackItem {
     name: string,
     iconSvg?: ReactElement,
     iconUrl?: string,

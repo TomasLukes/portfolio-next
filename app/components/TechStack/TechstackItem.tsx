@@ -1,9 +1,9 @@
 import { ReactElement } from "react"
 import Image from "next/image";
 
-import { ITechstackItem } from "@/components/Techstack/prop";
+import { ITechStackItem } from "@/components/TechStack/prop";
 
-const TechstackItem = ({name, iconSvg, iconUrl }: ITechstackItem): ReactElement => {
+const TechstackItem = ({name, iconSvg, iconUrl }: ITechStackItem): ReactElement => {
     return (
         <li className="flex items-center w-32 md:w-40 h-10 md:h-[50px] rounded-3xl border border-1 border-neutral-700">
             <div className="mx-auto flex items-center justify-center gap-2">
