@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { ITechStackItem } from "@/components/TechStack/prop";
 
-const TechstackItem = ({name, iconSvg, iconUrl }: ITechStackItem): ReactElement => {
+const TechStackItem = ({name, iconSvg, iconUrl }: ITechStackItem): ReactElement => {
     return (
         <li className="flex items-center w-32 md:w-40 h-10 md:h-[50px] rounded-3xl border border-1 border-neutral-700">
             <div className="mx-auto flex items-center justify-center gap-2">
@@ -27,4 +27,4 @@ const TechstackItem = ({name, iconSvg, iconUrl }: ITechStackItem): ReactElement 
     )
 }
 
-export default TechstackItem
+export default TechStackItem
