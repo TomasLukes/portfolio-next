@@ -23,7 +23,7 @@ const ProjectCardLg = ({ name, description, imgHorizontal, imgVertical, url, ghU
       <div className="flex flex-col mx-auto lg:3/5 py-4 md:py-6 px-6 md:px-8">
         <div className="flex-grow">
           <div className="flex mb-4 items-center justify-between gap-8">
-            <h4 className="text-2xl font-bold tracking-tight text-neutral-100 ">
+            <h4 className="text-2xl font-bold tracking-tight">
               {name}
             </h4>
             <div className="flex items-center gap-1 ml-auto">
@@ -44,33 +44,31 @@ const ProjectCardLg = ({ name, description, imgHorizontal, imgVertical, url, ghU
               {
                 database === "Strapi" ?
                 <Image
-                  src="/assets/images/icons/tech/strapi.png"
+                  src="/assets/icons/techstack/strapi.png"
                   alt="Strapi icon"
                   className="h-6 w-6"
                   width={24}
                   height={24}
                 /> :
                 <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48">
-                <path fill="#ff8f00" d="M8,37L23.234,8.436c0.321-0.602,1.189-0.591,1.494,0.02L30,19L8,37z"/><path fill="#ffa000" d="M8,36.992l5.546-34.199c0.145-0.895,1.347-1.089,1.767-0.285L26,22.992L8,36.992z"/><path fill="#ff6f00" d="M8.008 36.986L8.208 36.829 25.737 22.488 20.793 13.012z"/><path fill="#ffc400" d="M8,37l26.666-25.713c0.559-0.539,1.492-0.221,1.606,0.547L40,37l-15,8.743 c-0.609,0.342-1.352,0.342-1.961,0L8,37z"/>
-              </svg>
-}
+                  <path fill="#ff8f00" d="M8,37L23.234,8.436c0.321-0.602,1.189-0.591,1.494,0.02L30,19L8,37z"/><path fill="#ffa000" d="M8,36.992l5.546-34.199c0.145-0.895,1.347-1.089,1.767-0.285L26,22.992L8,36.992z"/><path fill="#ff6f00" d="M8.008 36.986L8.208 36.829 25.737 22.488 20.793 13.012z"/><path fill="#ffc400" d="M8,37l26.666-25.713c0.559-0.539,1.492-0.221,1.606,0.547L40,37l-15,8.743 c-0.609,0.342-1.352,0.342-1.961,0L8,37z"/>
+                </svg>
+              }
             </div>
           </div>
-          <p className="pb-6 font-normal text-neutral-200">
+          <p className="pb-6 font-normal">
             {description}
           </p>
         </div>
         <div className="flex gap-4 mx-auto mt-auto">
-          <a href={`${ghUrl}`} rel="noreferrer" target="_blank" aria-label={`See ${name} code at Github`} className="flex items-center px-3 py-2 text-sm rounded-lg font-medium border border-1 border-neutral-300
-          text-neutral-200 hover:border-yellow-500"
+          <a href={`${ghUrl}`} rel="noreferrer" target="_blank" aria-label={`See ${name} code at Github`} className="flex items-center px-3 py-2 text-sm rounded-lg font-medium border border-1 border-neutral-300 hover:border-yellow-500"
           >
             Code
             <svg className="w-8 pl-3 fill-neutral-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
               <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
             </svg>
           </a>
-          <a href={`${url}`} rel="noreferrer" target="_blank" aria-label={`See live page of ${name}`} className="flex items-center px-3 py-2 text-sm rounded-lg font-medium border border-1 border-neutral-300
-          text-neutral-200 hover:border-yellow-500"
+          <a href={`${url}`} rel="noreferrer" target="_blank" aria-label={`See live page of ${name}`} className="flex items-center px-3 py-2 text-sm rounded-lg font-medium border border-1 border-neutral-300 hover:border-yellow-500"
           >
             Live
             <svg className="w-9 pl-3  fill-neutral-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">

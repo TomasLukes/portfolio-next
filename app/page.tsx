@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 const Home = (): ReactElement => {
   return (
-    <main className="text-neutral-100">
+    <main className="text-neutral-200">
       <Navbar />
       <section className="w-full max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8">
         <Hero />
