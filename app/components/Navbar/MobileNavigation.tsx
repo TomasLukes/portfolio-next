@@ -2,6 +2,7 @@
 
 import { ReactElement, useState } from "react"
 import Link from "next/link"
+import clsx from 'clsx';
 
 import { navigationConfig } from "@/components/Navbar/config"
 
@@ -19,8 +20,13 @@ const MobileNavigation = (): ReactElement => {
         type="button"
         className="ml-auto lg:hidden flex items-center p-3 md:p-6"
         onClick={handleClick}>
-        <div 
-          className={`${mobileMenuOpen ? 'open' : ''} block hamburger lg:hidden focus:outline-none`}
+        <div
+          className={
+            clsx(
+              "block hamburger lg:hidden focus:outline-none",
+              {"open" : mobileMenuOpen}
+            )
+          }
         >
           <span className="hamburger-top"/>
           <span className="hamburger-middle"/>
@@ -30,8 +36,12 @@ const MobileNavigation = (): ReactElement => {
       
       <div 
         id="menu"
-        className={`${!mobileMenuOpen && 'hidden'} absolute flex flex-col gap-4 items-center self-end py-8 font-bold rounded-lg
-        bg-neutral-200 text-neutral-900 sm:w-auto sm:self-center left-4 right-4 drop-shadow-md mx-auto md:mx-8`}
+        className={
+          clsx(
+            "absolute flex flex-col gap-4 items-center self-end py-8 font-bold rounded-lg bg-neutral-200 text-neutral-900 sm:w-auto sm:self-center left-4 right-4 drop-shadow-md mx-auto md:mx-8", 
+            {"hidden" : !mobileMenuOpen}
+          )
+        }
       >
         {
           navigationConfig.map((item, index) => {

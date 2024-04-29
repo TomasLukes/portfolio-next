@@ -7,7 +7,7 @@ import { bioData } from "@/components/Bio/data"
 
 const Bio = (): ReactElement => {
   return (
-    <div className="">
+    <div>
       <h5 className="text-lg md:text-xl font-semibold mb-1 md:mb-3">
         Additional information:
       </h5>
