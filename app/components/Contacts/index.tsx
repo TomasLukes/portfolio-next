@@ -1,26 +1,20 @@
 "use client"
 
 import { ReactElement } from "react";
+
+import SuccessScreen from "@/components/Contacts/SuccessScreen";
+
 import { useForm, ValidationError } from "@formspree/react"
 
 const Contacts = (): ReactElement => {
   const [state, handleSubmit] = useForm("moqzorbr");
 
   if (state.succeeded) {
-    return (
-      <div className="pt-12 md:pt-28 pb-16 md:pb-32">
-        <p className="mx-auto w-fit text-xl md:text-2xl border-solid border-l-8 pl-2 border-yellow-500" >
-          Your message has been successfully sent. 🎉 
-          <br/>
-          {`I'll get back to you as soon as possible. Your interest means a lot to me!`}
-        </p>
-      </div> 
-    )
-
+    return <SuccessScreen />
   }
 
   return (
-    <section id="contacts" className="max-w-[720px] mx-auto pt-12 md:mt-24 pb-16 md:pb-32 " >
+    <section id="contacts" className="max-w-[720px] mx-auto pt-12 md:mt-24 pb-16 md:pb-32" >
       <h2 className="w-fit mx-auto text-2xl md:text-4xl font-bold mb-3 md:mb-9 border-solid border-l-8 pl-2 border-yellow-500">
         Contact me
       </h2>
@@ -31,18 +25,18 @@ const Contacts = (): ReactElement => {
              focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 sm:text-sm" 
             />
             <ValidationError 
-            prefix="Name" 
-            field="name"
-            errors={state.errors}
+              prefix="Name" 
+              field="name"
+              errors={state.errors}
             />
             <input type='email' name="email" placeholder="E-mail" minLength={8} required className="placeholder:italic placeholder:text-slate-400 block
              w-full rounded-md py-2 pl-3 pr-3 shadow-sm border-2 border-gray-300
              focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 sm:text-sm" 
             />
             <ValidationError 
-            prefix="Email" 
-            field="email"
-            errors={state.errors}
+              prefix="Email" 
+              field="email"
+              errors={state.errors}
             />
           </div>
           <div>
@@ -52,9 +46,9 @@ const Contacts = (): ReactElement => {
             >
             </textarea>
             <ValidationError 
-            prefix="Message" 
-            field="message"
-            errors={state.errors}
+              prefix="Message" 
+              field="message"
+              errors={state.errors}
             />
           </div>
           <button type="submit"  className="text-neutral-200 mt-4 md:mt-6 m px-6 py-3 bg-neutral-900 rounded-lg border border-neutral-50
