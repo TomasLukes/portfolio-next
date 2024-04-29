@@ -15,7 +15,7 @@ export const timelineData: ITimelineData[] = [
         description: "Creating projects for various small entrepreneurs and companies as freelancer."
     },
     {
-        image: "hostynska.png",
+        image: "zs-hostynska.png",
         headline: "ICT teacher",
         company: "ZS Hostynska",
         startsFromDate: "09/2019",
@@ -23,7 +23,7 @@ export const timelineData: ITimelineData[] = [
         description: "Teaching computer science, implementing programming into the curriculum, supporting the school's transition to digitalization."
     },
     {
-        image: "ct.png",
+        image: "czech-tv.png",
         headline: "Post Production Coordinator",
         company: "Czech public TV",
         startsFromDate: "07/2018",
@@ -38,7 +38,7 @@ export const timelineData: ITimelineData[] = [
         description: "Working with audio equipment (hardware/software), collaboration in delivering the required technical solutions for a given project."
     },
     {
-        image: "panska.png",
+        image: "spsst-panska.png",
         headline: "Audiovisual technology",
         company: "SPSST Panska",
         startsFromDate: "09/2009",
