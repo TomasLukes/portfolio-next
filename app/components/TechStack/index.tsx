@@ -1,4 +1,4 @@
-import { ReactElement } from "react"
+import { ReactElement } from "react";
 
 import TechItem from "./TechItem";
 
@@ -11,18 +11,19 @@ const TechStack = (): ReactElement => {
         Techstack
       </h3>
       <ul className="flex flex-wrap gap-4 text-sm md:text-base items-center justify-center md:justify-start">
-        {techstackData.map(item => {
+        {techstackData.map((item) => {
           return (
             <TechItem
               key={item.name}
               name={item.name}
               iconSvg={item.iconSvg}
               iconUrl={item.iconUrl}
-            />)
+            />
+          );
         })}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default TechStack
+export default TechStack;

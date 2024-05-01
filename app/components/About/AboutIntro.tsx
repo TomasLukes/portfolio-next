@@ -1,4 +1,4 @@
-import { ReactElement } from "react"
+import { ReactElement } from "react";
 
 const AboutIntro = (): ReactElement => {
   return (
@@ -17,7 +17,7 @@ const AboutIntro = (): ReactElement => {
         `}
       </p>
     </>
-  )
-}
+  );
+};
 
-export default AboutIntro
+export default AboutIntro;

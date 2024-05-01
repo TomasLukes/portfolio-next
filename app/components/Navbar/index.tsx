@@ -1,7 +1,7 @@
-import { ReactElement } from "react"
+import { ReactElement } from "react";
 
-import DesktopNavigation from "@/components/Navbar/DesktopNavigation"
-import MobileNavigation from "@/components/Navbar/MobileNavigation"
+import DesktopNavigation from "@/components/Navbar/DesktopNavigation";
+import MobileNavigation from "@/components/Navbar/MobileNavigation";
 
 const Navbar = (): ReactElement => {
   return (
@@ -9,7 +9,7 @@ const Navbar = (): ReactElement => {
       <DesktopNavigation />
       <MobileNavigation />
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
