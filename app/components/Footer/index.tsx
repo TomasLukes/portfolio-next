@@ -1,7 +1,7 @@
-import { ReactElement } from "react"
-import Link from "next/link"
+import { ReactElement } from "react";
+import Link from "next/link";
 
-import Icons from "@/components/Icons"
+import Icons from "@/components/Icons";
 
 const Footer = (): ReactElement => {
   return (
@@ -11,16 +11,26 @@ const Footer = (): ReactElement => {
           Created by <span className="font-semibold">Tomas Lukes</span> 2024
         </p>
         <div className="flex gap-2 md:gap-6">
-          <Link href="https://www.linkedin.com/in/tomas-lukes" rel="noreferrer" target="_blank" aria-label="See more at my Linkedin">
+          <Link
+            href="https://www.linkedin.com/in/tomas-lukes"
+            rel="noreferrer"
+            target="_blank"
+            aria-label="See more at my Linkedin"
+          >
             <Icons.socials.linkedin />
           </Link>
-          <Link href="https://github.com/TomasLukes" rel="noreferrer" target="_blank" aria-label="See more at my Github">
+          <Link
+            href="https://github.com/TomasLukes"
+            rel="noreferrer"
+            target="_blank"
+            aria-label="See more at my Github"
+          >
             <Icons.socials.github className="w-6 md:w-8 hover:fill-yellow-500 hover:scale-105" />
           </Link>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

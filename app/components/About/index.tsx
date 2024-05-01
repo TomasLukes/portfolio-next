@@ -1,8 +1,8 @@
-import { ReactElement } from "react"
+import { ReactElement } from "react";
 
-import AboutIntro from "@/components/About/AboutIntro"
-import Bio from "@/components/Bio"
-import Timeline from "@/components/Timeline"
+import AboutIntro from "@/components/About/AboutIntro";
+import Bio from "@/components/Bio";
+import Timeline from "@/components/Timeline";
 
 const About = (): ReactElement => {
   return (
@@ -16,8 +16,8 @@ const About = (): ReactElement => {
           <Timeline />
         </div>
       </div>
-    </section> 
-  )
-}
+    </section>
+  );
+};
 
-export default About
+export default About;

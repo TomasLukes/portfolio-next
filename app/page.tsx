@@ -20,6 +20,6 @@ const Home = (): ReactElement => {
       <Footer />
     </main>
   );
-}
+};
 
-export default Home
+export default Home;

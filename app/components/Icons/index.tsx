@@ -12,7 +12,7 @@ const Icons = {
       <svg
         className={clsx(
           "w-6 md:w-8 fill-neutral-200 hover:fill-yellow-500 hover:scale-105",
-          className
+          className,
         )}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"
@@ -33,7 +33,7 @@ const Icons = {
       <svg
         className={clsx(
           "x fill-neutral-100 hover:fill-yellow-500 hover:scale-105",
-          className
+          className,
         )}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
@@ -54,7 +54,7 @@ const Icons = {
       <svg
         className={clsx(
           "w-5 md:w-6 fill-neutral-100 hover:fill-yellow-500",
-          className
+          className,
         )}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 384 512"
