@@ -12,10 +12,10 @@ const Footer = (): ReactElement => {
         </p>
         <div className="flex gap-2 md:gap-6">
           <Link href="https://www.linkedin.com/in/tomas-lukes" rel="noreferrer" target="_blank" aria-label="See more at my Linkedin">
-            {Icons.socials.linkedin}
+            <Icons.socials.linkedin />
           </Link>
           <Link href="https://github.com/TomasLukes" rel="noreferrer" target="_blank" aria-label="See more at my Github">
-            {Icons.socials.github}
+            <Icons.socials.github className="w-6 md:w-8 hover:fill-yellow-500 hover:scale-105" />
           </Link>
         </div>
       </div>

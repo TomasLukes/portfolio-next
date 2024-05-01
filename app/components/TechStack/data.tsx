@@ -1,35 +1,35 @@
 import Icons from "@/components/Icons";
 
-import { ITechItem } from "./prop";
+import { ITechItem } from "@/components/TechStack/prop";
 
 export const techstackData: ITechItem[] = [
     {
         name: "React",
-        iconSvg: Icons.techstack.react,
+        iconSvg: <Icons.techstack.react />
     },
     {
         name: "Next.js",
-        iconSvg: Icons.techstack.nextjs,
+        iconSvg: <Icons.techstack.nextjs />,
     },
     {
         name: "Typescript",
-        iconSvg: Icons.techstack.typescript,
+        iconSvg: <Icons.techstack.typescript />,
     },
     {
         name: "Javascript",
-        iconSvg: Icons.techstack.javascript,
+        iconSvg: <Icons.techstack.javascript />,
     },
     {
         name: "Tailwind",
-        iconSvg: Icons.techstack.tailwind,
+        iconSvg: <Icons.techstack.tailwind />,
     },
     {
         name: "HTML",
-        iconSvg: Icons.techstack.html,
+        iconSvg: <Icons.techstack.html />,
     },
     {
         name: "CSS",
-        iconSvg: Icons.techstack.css,
+        iconSvg: <Icons.techstack.css />,
     },
     {
         name: "Rest API",

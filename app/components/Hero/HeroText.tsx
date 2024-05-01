@@ -1,4 +1,5 @@
 import { ReactElement } from "react"
+import Link from "next/link"
 
 const HeroText = (): ReactElement => {
   return (
@@ -10,7 +11,8 @@ const HeroText = (): ReactElement => {
             Frontend developer
         </h2>
         <p className="hidden md:block w-full lg:w-4/5 text-justify mb-3">
-            {`Hello 👋 My name is Tomáš and I'm a frontend developer from Prague, currently working on fintech projects for akcenta.digital`}
+            {`Hello 👋 My name is Tomáš and I'm a frontend developer from Prague, currently working on fintech projects for `} 
+            <Link href={"https://www.akcenta.digital"} className="hover:underline hover:decoration-yellow-500">akcenta.digital</Link>.
         </p>
         <p className="hidden md:block w-full lg:w-4/5 text-justify mb-6">
             {`Do I know everything? Far from it. However, I have more than 10 years of experience in technical positions, 
