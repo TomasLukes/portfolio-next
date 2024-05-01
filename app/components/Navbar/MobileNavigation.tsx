@@ -37,7 +37,7 @@ const MobileNavigation = (): ReactElement => {
         id="menu"
         className={clsx(
           "absolute flex flex-col gap-4 items-center self-end py-8 font-bold rounded-lg bg-neutral-200 text-neutral-900 sm:w-auto sm:self-center left-4 right-4 drop-shadow-md mx-auto md:mx-8",
-          { hidden: !mobileMenuOpen },
+          { hidden: !mobileMenuOpen }
         )}
       >
         {navigationConfig.map((item, index) => {
@@ -45,11 +45,7 @@ const MobileNavigation = (): ReactElement => {
 
           return (
             <>
-              <Link
-                key={item.label}
-                href="#about"
-                className="hover:text-yellow-500 drop-shadow-sm"
-              >
+              <Link key={item.label} href="#about" className="hover:text-yellow-500 drop-shadow-sm">
                 {item.label}
               </Link>
               {!isLastItem && (

@@ -4,11 +4,7 @@ const NoiseBgFilter = (): ReactElement => {
   return (
     <svg className="hidden">
       <filter id="noiseFilter">
-        <feTurbulence
-          type="fractalNoise"
-          baseFrequency="0.925"
-          stitchTiles="stitch"
-        />
+        <feTurbulence type="fractalNoise" baseFrequency="0.925" stitchTiles="stitch" />
         <feColorMatrix
           in="colorNoise"
           type="matrix"

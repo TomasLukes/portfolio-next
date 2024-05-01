@@ -1,10 +1,9 @@
 import { ReactElement } from "react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 import ProjectCardIcons from "@/components/ProjectCard/ProjectCardIcons";
 import ProjectCardLinks from "@/components/ProjectCard/ProjectCardLinks";
-
 import { IProjectCard } from "@/components/ProjectCard/prop";
 
 const ProjectCard = ({

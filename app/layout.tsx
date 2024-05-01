@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
-
 import { ReactElement } from "react";
+import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import NoiseBgFilter from "@/components/NoiseBgFilter";

@@ -1,16 +1,13 @@
 import { ReactElement } from "react";
 
+import HeroIcons from "@/components/Hero/HeroIcons";
 import HeroIllustration from "@/components/Hero/HeroIllustration";
 import HeroText from "@/components/Hero/HeroText";
-import HeroIcons from "@/components/Hero/HeroIcons";
 import TechStack from "@/components/TechStack";
 
 const Hero = (): ReactElement => {
   return (
-    <section
-      id="hero"
-      className="min-h-[100vh - 72px] grid place-content-center"
-    >
+    <section id="hero" className="min-h-[100vh - 72px] grid place-content-center">
       <div className="flex gap-4">
         <div className="w-1/2">
           <HeroText />

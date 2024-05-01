@@ -1,3 +1,5 @@
+import { EnumDatabase } from "@/components/ProjectCard/prop";
+
 export const projectsData = [
   {
     name: "Akcenta CZ",
@@ -6,7 +8,7 @@ export const projectsData = [
     ghUrl: "https://github.com/akcentacz",
     url: "https://www.akcenta.cz",
     img: "akcenta-web.png",
-    database: "Strapi",
+    database: EnumDatabase.Strapi,
   },
   {
     name: "akcenta.digital",
@@ -15,7 +17,7 @@ export const projectsData = [
     ghUrl: "https://github.com/akcentacz",
     url: "https://www.akcenta.digital",
     img: "digital-web.png",
-    database: "Supabase",
+    database: EnumDatabase.Supabase,
   },
   {
     name: "Lynxes",
@@ -24,6 +26,6 @@ export const projectsData = [
     url: "https://lynxes.tomaslukes.com/",
     ghUrl: "https://github.com/TomasLukes/lynxes",
     img: "lynxes-web.png",
-    database: "Firebase",
+    database: EnumDatabase.Firebase,
   },
 ];

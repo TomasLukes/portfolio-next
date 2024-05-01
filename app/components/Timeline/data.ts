@@ -13,8 +13,7 @@ export const timelineData: ITimelineData[] = [
     headline: "Frontend developer",
     company: "Freelance",
     startsFromDate: "01/2023",
-    description:
-      "Creating projects for various small entrepreneurs and companies as freelancer.",
+    description: "Creating projects for various small entrepreneurs and companies as freelancer.",
   },
   {
     image: "zs-hostynska.png",
