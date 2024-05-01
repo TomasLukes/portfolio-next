@@ -5,7 +5,7 @@ import { EnumDatabase } from "@/components/ProjectCard/prop";
 
 const ProjectCardIcons = ({ database }: { database: EnumDatabase }): ReactElement => {
   return (
-    <div className="flex items-center gap-1 ml-auto">
+    <div className="flex items-center gap-1">
       <Icons.techstack.nextjs />
       <Icons.techstack.react />
       <Icons.techstack.typescript />

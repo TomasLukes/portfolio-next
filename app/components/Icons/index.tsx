@@ -60,7 +60,7 @@ const Icons = {
   techstack: {
     css: ({ className }: IClassName): ReactElement => (
       <svg
-        className={clsx("w-6 md:w-8", className)}
+        className={clsx("w-6 md:w-7", className)}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 128 128"
       >
@@ -89,7 +89,7 @@ const Icons = {
     ),
     html: ({ className }: IClassName): ReactElement => (
       <svg
-        className={clsx("w-6 md:w-8", className)}
+        className={clsx("w-6 md:w-7", className)}
         xmlns="http://www.w3.org/2000/svg"
         aria-label="HTML5"
         viewBox="0 0 512 512"
@@ -105,7 +105,7 @@ const Icons = {
     ),
     javascript: ({ className }: IClassName): ReactElement => (
       <svg
-        className={clsx("w-5 md:w-7 h-auto", className)}
+        className={clsx("w-5 md:w-6 h-auto", className)}
         xmlns="http://www.w3.org/2000/svg"
         width="2500"
         height="2500"
@@ -118,7 +118,7 @@ const Icons = {
     ),
     typescript: ({ className }: IClassName): ReactElement => (
       <svg
-        className={clsx("w-5 md:w-7", className)}
+        className={clsx("w-5 md:w-6", className)}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 128 128"
       >
@@ -130,7 +130,7 @@ const Icons = {
     ),
     react: ({ className }: IClassName): ReactElement => (
       <svg
-        className={clsx("w-6 md:w-8", className)}
+        className={clsx("w-6 md:w-7", className)}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 128 128"
       >
@@ -142,7 +142,7 @@ const Icons = {
     ),
     nextjs: ({ className }: IClassName): ReactElement => (
       <svg
-        className={clsx("w-6 md:w-8", className)}
+        className={clsx("w-6 md:w-7", className)}
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +155,7 @@ const Icons = {
     ),
     tailwind: ({ className }: IClassName): ReactElement => (
       <svg
-        className={clsx("w-6 md:w-8", className)}
+        className={clsx("w-6 md:w-7", className)}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 128 128"
       >
