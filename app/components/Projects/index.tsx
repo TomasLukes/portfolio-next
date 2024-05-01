@@ -1,6 +1,6 @@
 import { ReactElement } from "react"
 
-import ProjectCardLg from "@/components/ProjectCard/ProjectCardLg"
+import ProjectCard from "@/components/ProjectCard"
 import { projectsData } from "@/components/Projects/data"
 
 const Projects = (): ReactElement => {
@@ -19,7 +19,7 @@ const Projects = (): ReactElement => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projectsData.map(project => {
             return (
-              <ProjectCardLg 
+              <ProjectCard
                 key={project.name}
                 name={project.name}
                 description={project.description}

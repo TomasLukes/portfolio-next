@@ -26,7 +26,7 @@ const Bio = (): ReactElement => {
           Complete CV in PDF format
         </h5>
         <Link href="./assets/files/CV_Tomas_Lukes.pdf" download target="_blank">   
-          {Icons.socials.downloadPDF}
+          <Icons.socials.downloadPDF />
         </Link>
       </div>
     </div> 
