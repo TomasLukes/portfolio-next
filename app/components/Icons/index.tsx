@@ -1,5 +1,5 @@
+import { ReactElement } from "react";
 import Image from "next/image";
-
 import clsx from "clsx";
 
 interface IClassName {
@@ -8,11 +8,11 @@ interface IClassName {
 
 const Icons = {
   socials: {
-    linkedin: ({ className }: IClassName) => (
+    linkedin: ({ className }: IClassName): ReactElement => (
       <svg
         className={clsx(
           "w-6 md:w-8 fill-neutral-200 hover:fill-yellow-500 hover:scale-105",
-          className,
+          className
         )}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"
@@ -20,7 +20,7 @@ const Icons = {
         <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
       </svg>
     ),
-    github: ({ className }: IClassName) => (
+    github: ({ className }: IClassName): ReactElement => (
       <svg
         className={clsx("fill-neutral-200", className)}
         xmlns="http://www.w3.org/2000/svg"
@@ -29,19 +29,16 @@ const Icons = {
         <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
       </svg>
     ),
-    email: ({ className }: IClassName) => (
+    email: ({ className }: IClassName): ReactElement => (
       <svg
-        className={clsx(
-          "x fill-neutral-100 hover:fill-yellow-500 hover:scale-105",
-          className,
-        )}
+        className={clsx("x fill-neutral-100 hover:fill-yellow-500 hover:scale-105", className)}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
       >
         <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
       </svg>
     ),
-    link: ({ className }: IClassName) => (
+    link: ({ className }: IClassName): ReactElement => (
       <svg
         className={clsx("w-9 pl-3 fill-neutral-200", className)}
         xmlns="http://www.w3.org/2000/svg"
@@ -50,12 +47,9 @@ const Icons = {
         <path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
       </svg>
     ),
-    downloadPDF: ({ className }: IClassName) => (
+    downloadPDF: ({ className }: IClassName): ReactElement => (
       <svg
-        className={clsx(
-          "w-5 md:w-6 fill-neutral-100 hover:fill-yellow-500",
-          className,
-        )}
+        className={clsx("w-5 md:w-6 fill-neutral-100 hover:fill-yellow-500", className)}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 384 512"
       >
@@ -64,7 +58,7 @@ const Icons = {
     ),
   },
   techstack: {
-    css: ({ className }: IClassName) => (
+    css: ({ className }: IClassName): ReactElement => (
       <svg
         className={clsx("w-6 md:w-8", className)}
         xmlns="http://www.w3.org/2000/svg"
@@ -74,10 +68,7 @@ const Icons = {
           fill="#1572B6"
           d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"
         />
-        <path
-          fill="#33A9DC"
-          d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"
-        />
+        <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z" />
         <path
           fill="#fff"
           d="M64.001 51.429h18.302l1.264-14.163h-19.566v-13.831h34.681999999999995l-.332 3.711-3.4 38.114h-30.95v-13.831z"
@@ -96,7 +87,7 @@ const Icons = {
         />
       </svg>
     ),
-    html: ({ className }: IClassName) => (
+    html: ({ className }: IClassName): ReactElement => (
       <svg
         className={clsx("w-6 md:w-8", className)}
         xmlns="http://www.w3.org/2000/svg"
@@ -109,13 +100,10 @@ const Icons = {
           fill="#ebebeb"
           d="M256 208h-75l-5-58h80V94H114l15 171h127zm-1 147l-63-17-4-45h-56l7 89 116 32z"
         />
-        <path
-          fill="#fff"
-          d="M255 208v57h70l-7 73-63 17v59l116-32 16-174zm0-114v56h137l5-56z"
-        />
+        <path fill="#fff" d="M255 208v57h70l-7 73-63 17v59l116-32 16-174zm0-114v56h137l5-56z" />
       </svg>
     ),
-    javascript: ({ className }: IClassName) => (
+    javascript: ({ className }: IClassName): ReactElement => (
       <svg
         className={clsx("w-5 md:w-7 h-auto", className)}
         xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +116,7 @@ const Icons = {
         <path d="M67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371 7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259-19.245 0-30.416-9.967-36.087-21.996M152.381 211.354l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607 9.969 0 16.325-4.984 16.325-11.858 0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257 0-18.044 13.747-31.792 35.228-31.792 15.294 0 26.292 5.328 34.196 19.247L210.29 147.43c-4.125-7.389-8.591-10.31-15.465-10.31-7.046 0-11.514 4.468-11.514 10.31 0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804 0 21.654-17.012 33.51-39.867 33.51-22.339 0-36.774-10.654-43.819-24.574" />
       </svg>
     ),
-    typescript: ({ className }: IClassName) => (
+    typescript: ({ className }: IClassName): ReactElement => (
       <svg
         className={clsx("w-5 md:w-7", className)}
         xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +128,7 @@ const Icons = {
         />
       </svg>
     ),
-    react: ({ className }: IClassName) => (
+    react: ({ className }: IClassName): ReactElement => (
       <svg
         className={clsx("w-6 md:w-8", className)}
         xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +140,7 @@ const Icons = {
         </g>
       </svg>
     ),
-    nextjs: ({ className }: IClassName) => (
+    nextjs: ({ className }: IClassName): ReactElement => (
       <svg
         className={clsx("w-6 md:w-8", className)}
         role="img"
@@ -165,7 +153,7 @@ const Icons = {
         ></path>
       </svg>
     ),
-    tailwind: ({ className }: IClassName) => (
+    tailwind: ({ className }: IClassName): ReactElement => (
       <svg
         className={clsx("w-6 md:w-8", className)}
         xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +165,7 @@ const Icons = {
         />
       </svg>
     ),
-    firebase: ({ className }: IClassName) => (
+    firebase: ({ className }: IClassName): ReactElement => (
       <svg
         className={clsx("h-6 w-6", className)}
         xmlns="http://www.w3.org/2000/svg"
@@ -191,17 +179,14 @@ const Icons = {
           fill="#ffa000"
           d="M8,36.992l5.546-34.199c0.145-0.895,1.347-1.089,1.767-0.285L26,22.992L8,36.992z"
         />
-        <path
-          fill="#ff6f00"
-          d="M8.008 36.986L8.208 36.829 25.737 22.488 20.793 13.012z"
-        />
+        <path fill="#ff6f00" d="M8.008 36.986L8.208 36.829 25.737 22.488 20.793 13.012z" />
         <path
           fill="#ffc400"
           d="M8,37l26.666-25.713c0.559-0.539,1.492-0.221,1.606,0.547L40,37l-15,8.743 c-0.609,0.342-1.352,0.342-1.961,0L8,37z"
         />
       </svg>
     ),
-    strapi: ({ className }: IClassName) => (
+    strapi: ({ className }: IClassName): ReactElement => (
       <Image
         src="/assets/icons/techstack/strapi.png"
         alt="Strapi icon"
@@ -210,7 +195,7 @@ const Icons = {
         height={24}
       />
     ),
-    supabase: ({ className }: IClassName) => (
+    supabase: ({ className }: IClassName): ReactElement => (
       <Image
         src="/assets/icons/techstack/supabase.png"
         alt="Strapi icon"

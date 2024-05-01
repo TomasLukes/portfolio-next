@@ -18,9 +18,7 @@ const TechStackItem = ({ name, iconSvg, iconUrl }: ITechItem): ReactElement => {
         ) : (
           iconSvg
         )}
-        <label className=" justify-self-end text-center font-medium ">
-          {name}
-        </label>
+        <label className=" justify-self-end text-center font-medium ">{name}</label>
       </div>
     </li>
   );

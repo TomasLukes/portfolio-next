@@ -9,11 +9,7 @@ const DesktopNavigation = (): ReactElement => {
       <div className="hidden lg:flex space-x-16 text-lg md:text-xl">
         {navigationConfig.map((item) => {
           return (
-            <Link
-              key={item.label}
-              href="#about"
-              className="hover:text-yellow-500 drop-shadow-sm"
-            >
+            <Link key={item.label} href="#about" className="hover:text-yellow-500 drop-shadow-sm">
               {item.label}
             </Link>
           );

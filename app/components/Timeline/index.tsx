@@ -5,16 +5,10 @@ import { timelineData } from "@/components/Timeline/data";
 
 const Timeline = (): ReactElement => {
   return (
-    <ol
-      id="timeline"
-      className="h-full ml-4 md:ml-0 border-l-4 border-neutral-200 "
-    >
+    <ol id="timeline" className="h-full ml-4 md:ml-0 border-l-4 border-neutral-200 ">
       {timelineData.map((job) => {
         return (
-          <li
-            key={`${job.company}-${job.headline}`}
-            className="pl-8 pt-4 pb-2 relative"
-          >
+          <li key={`${job.company}-${job.headline}`} className="pl-8 pt-4 pb-2 relative">
             {Boolean(job.image) && (
               <Image
                 src={`/assets/icons/jobs/${job.image}`}

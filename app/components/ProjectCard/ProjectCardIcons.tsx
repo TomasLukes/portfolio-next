@@ -1,14 +1,9 @@
 import { ReactElement } from "react";
 
 import Icons from "@/components/Icons";
-
 import { EnumDatabase } from "@/components/ProjectCard/prop";
 
-const ProjectCardIcons = ({
-  database,
-}: {
-  database: EnumDatabase;
-}): ReactElement => {
+const ProjectCardIcons = ({ database }: { database: EnumDatabase }): ReactElement => {
   return (
     <div className="flex items-center gap-1 ml-auto">
       <Icons.techstack.nextjs />

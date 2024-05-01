@@ -1,11 +1,11 @@
 import { ReactElement } from "react";
 
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 
 const Home = (): ReactElement => {
   return (

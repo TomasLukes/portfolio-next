@@ -1,5 +1,4 @@
 import Icons from "@/components/Icons";
-
 import { ITechItem } from "@/components/TechStack/prop";
 
 export const techstackData: ITechItem[] = [
