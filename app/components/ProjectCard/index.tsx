@@ -18,11 +18,10 @@ const ProjectCard = ({
     <article className="h-[450px] md:h-[600px] lg:h-[500px] flex flex-col overflow-hidden bg-neutral-900 border border-gray-700 rounded-lg shadow-md">
       <Link href={`${url}`} target="_blank">
         <Image
-          src={`/assets/images/projects-screenshots/${img}`}
+          src={img}
           alt={`Ukázka stránky projektu ${name}`}
+          placeholder="blur"
           className="w-full"
-          width={517}
-          height={263}
         />
       </Link>
       <div className="flex flex-col flex-grow py-4 md:py-6 px-6 md:px-8">

@@ -2,6 +2,9 @@ import { ReactElement } from "react";
 import Image from "next/image";
 import clsx from "clsx";
 
+import StrapiLogo from "@/assets/icons/techstack/strapi.png";
+import SupabaseLogo from "@/assets/icons/techstack/supabase.png";
+
 interface IClassName {
   className?: string;
 }
@@ -187,22 +190,10 @@ const Icons = {
       </svg>
     ),
     strapi: ({ className }: IClassName): ReactElement => (
-      <Image
-        src="/assets/icons/techstack/strapi.png"
-        alt="Strapi icon"
-        className={clsx("h-6 w-6", className)}
-        width={24}
-        height={24}
-      />
+      <Image src={StrapiLogo} alt="Strapi icon" className={clsx("h-6 w-6", className)} />
     ),
     supabase: ({ className }: IClassName): ReactElement => (
-      <Image
-        src="/assets/icons/techstack/supabase.png"
-        alt="Strapi icon"
-        className={clsx("h-5 w-5", className)}
-        width={20}
-        height={20}
-      />
+      <Image src={SupabaseLogo} alt="Strapi icon" className={clsx("h-5 w-5", className)} />
     ),
   },
 };

@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import Image from "next/image";
 
-import ProfileImage from "@/public/assets/images/profile-photo/profile-photo.jpg";
+import ProfileImage from "@/assets/images/profile-photo/profile-photo.jpg";
 
 const HeroIllustration = (): ReactElement => {
   return (

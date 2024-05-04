@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 
 import NoiseBgFilter from "@/components/NoiseBgFilter";
 
-import "@/styles/globals.css";
+import "@/app/styles/globals.css";
 
 const recoleta = localFont({
   src: [
