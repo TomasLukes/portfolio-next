@@ -20,7 +20,12 @@ const Bio = (): ReactElement => {
       </div>
       <div className="md:w-3/5 flex items-center gap-2 md:gap-4">
         <h5 className="text-lg md:text-xl font-semibold">Complete CV in PDF format</h5>
-        <Link href="./assets/files/CV_Tomas_Lukes.pdf" download target="_blank">
+        <Link
+          href="./assets/files/CV_Tomas_Lukes.pdf"
+          download
+          target="_blank"
+          aria-label="Download my CV in PDF format"
+        >
           <Icons.socials.downloadPDF />
         </Link>
       </div>

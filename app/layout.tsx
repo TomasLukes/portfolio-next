@@ -33,7 +33,7 @@ const recoleta = localFont({
 
 export const metadata: Metadata = {
   title: "Tomas Lukes | Frontend Developer",
-  description: "",
+  description: "Frontend Developer portfolio of Tomas Lukes",
 };
 
 const RootLayout = ({
