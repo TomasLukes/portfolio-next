@@ -8,7 +8,7 @@ const AboutIntro = (): ReactElement => {
       </h2>
       <p className="md:w-3/5 pb-2 md:pb-4">
         {`I have experience with a wide range of technologies, 
-          including React, Tailwind CSS, Sass, and many others. Currently, I'm learning Next.js and TypeScript while working on my latest project.
+          including front-end Next.js, React, JavaScript and TypeScript, Tailwind CSS and even full-stack like PostgreSQL, headless CMS and REST APIs.
         `}
       </p>
       <p className="md:w-3/5 pb-8 md:pb-12">
