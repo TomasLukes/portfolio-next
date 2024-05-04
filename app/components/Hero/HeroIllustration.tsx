@@ -1,15 +1,17 @@
 import { ReactElement } from "react";
 import Image from "next/image";
 
+import ProfileImage from "@/public/assets/images/profile-photo/profile-photo.jpg";
+
 const HeroIllustration = (): ReactElement => {
   return (
     <div className="w-1/2">
       <Image
-        src="/assets/images/profile-photo/profile-photo.jpg"
-        alt=""
+        src={ProfileImage}
+        alt="Tomas Lukes profile picture"
+        placeholder="blur"
+        priority
         className="w-28 md:w-60 lg:w-80 rounded-full object-cover ml-auto md:mr-20 border-solid border-2 border-neutral-300 border-opacity-50"
-        width={320}
-        height={320}
       />
       <div className="container blob-container">
         <span className="blob-1 blob"></span>
