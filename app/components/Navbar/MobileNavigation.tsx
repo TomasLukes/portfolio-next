@@ -44,14 +44,14 @@ const MobileNavigation = (): ReactElement => {
           const isLastItem: boolean = index === navigationConfig.length - 1;
 
           return (
-            <>
-              <Link key={item.label} href="#about" className="hover:text-yellow-500 drop-shadow-sm">
+            <li key={item.label} className="w-full flex flex-col items-center gap-1">
+              <Link href="#about" className="hover:text-yellow-500 drop-shadow-sm">
                 {item.label}
               </Link>
               {!isLastItem && (
                 <span className="w-4/5 mx-auto border border-solid border-b-1 border-gray-300 drop-shadow-sm" />
               )}
-            </>
+            </li>
           );
         })}
       </div>
