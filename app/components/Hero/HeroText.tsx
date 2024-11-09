@@ -11,12 +11,12 @@ const HeroText = (): ReactElement => {
         Frontend developer
       </h2>
       <p className="hidden md:block w-full lg:w-4/5 text-justify mb-3">
-        {`Hello 👋 My name is Tomáš and I'm a frontend developer from Prague, currently working on fintech projects for `}
+        {`Hello 👋 My name is Tomáš and I'm a frontend developer from Prague, currently working on brand tracking and ad tracking software solutions for `}
         <Link
-          href={"https://www.akcenta.digital"}
+          href={"https://www.behaviolabs.com"}
           className="hover:underline hover:decoration-yellow-500"
         >
-          akcenta.digital
+          Behavio Labs
         </Link>
         .
       </p>

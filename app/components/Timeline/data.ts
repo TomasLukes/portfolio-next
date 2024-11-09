@@ -2,10 +2,19 @@ import { ITimelineData } from "@/components/Timeline/prop";
 
 export const timelineData: ITimelineData[] = [
   {
+    image: "behavio.png",
+    headline: "Frontend developer",
+    company: "Behavio Labs",
+    startsFromDate: "12/2024",
+    description:
+      "Helping with brand tracking and ad tracking software solutions for startup selected by Deloitte in Technology Fast 50.",
+  },
+  {
     image: "akcenta.png",
     headline: "Frontend developer",
     company: "akcenta.digital",
     startsFromDate: "07/2023",
+    upToDate: "12/2024",
     description:
       "Developing strategic projects for fintech using modern technologies (React, Next.js, TypeScript, Tailwind CSS, and others).",
   },
