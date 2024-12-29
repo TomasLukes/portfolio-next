@@ -8,7 +8,7 @@ const TechStack = (): ReactElement => {
   return (
     <div className="w-full pt-12 md:mt-36  max-w-[900px] mx-auto">
       <h3 className="text-xl md:text-2xl font-medium mb-3 md:mb-6">Techstack</h3>
-      <ul className="flex flex-wrap gap-4 text-sm md:text-base items-center justify-center md:justify-start">
+      <ul className="w-fit mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-start gap-4">
         {techstackData.map((item) => {
           return (
             <TechItem

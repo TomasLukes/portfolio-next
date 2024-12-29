@@ -17,11 +17,13 @@ const Hero = (): ReactElement => {
       </div>
       {/* TODO: Make mobile text to component */}
       <p className="md:hidden container text-sm mx-auto text-justify mt-6">
-        {`Hello 👋 My name is Tomáš and I'm a frontend developer from Prague, currently working on fintech projects for akcenta.digital`}
+        {`Hello 👋 My name is Tomáš and I'm a frontend developer from Prague, currently working on
+        brand tracking and ad tracking software solutions for Behavio Labs.`}
       </p>
       <p className="md:hidden container text-sm mx-auto text-justify mt-3">
-        {`Do I know everything? Far from it. However, I have more than 10 years of experience in technical positions, 
-            and if you're looking for a team member with the potential for rapid growth and the ability to learn constantly, keep reading.`}
+        {`Do I know everything? Far from it. However, I have more than 10 years of experience in
+        technical positions, and if you're looking for a team member with the potential for rapid
+        growth and the ability to learn constantly, keep reading.`}
       </p>
       <TechStack />
     </section>

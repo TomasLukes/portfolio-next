@@ -8,7 +8,7 @@ const Footer = (): ReactElement => {
     <footer className="w-full bg-neutral-800">
       <div className="flex items-center justify-between py-4 md:py-6 px-4 md:px-6 lg:px-8">
         <p className="text-xs md:text-sm">
-          Created by <span className="font-semibold">Tomas Lukes</span> 2024
+          Created by <span className="font-semibold">Tomas Lukes</span> 2025
         </p>
         <div className="flex gap-2 md:gap-6">
           <Link
