@@ -21,8 +21,7 @@ const HeroText = (): ReactElement => {
         .
       </p>
       <p className="hidden md:block w-full lg:w-4/5 text-justify mb-6">
-        {`Do I know everything? Far from it. However, I have more than 10 years of experience in technical positions, 
-            and if you're looking for a team member with the potential for rapid growth and the ability to learn constantly, keep reading.`}
+        {`While I emphasize modern tech stacks and code quality, first and foremost I'm always searching for ways to bring value to real-life users and businesses through my digital products.`}
       </p>
     </>
   );

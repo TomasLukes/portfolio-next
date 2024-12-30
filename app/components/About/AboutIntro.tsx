@@ -12,9 +12,7 @@ const AboutIntro = (): ReactElement => {
         `}
       </p>
       <p className="md:w-3/5 pb-8 md:pb-12">
-        {`Do I know everything? Far from it. However, I bring over 10 years of experience from various technical positions. 
-          If you're in search of a team member with the potential for rapid growth and a constant willingness to learn, feel free to reach out to me.
-        `}
+        {`Do I know everything? Far from it. However, I have more than 10 years of experience in technical positions, and if you're looking for a team member with the potential for rapid growth and the ability to learn constantly, feel free to reach me.`}
       </p>
     </>
   );

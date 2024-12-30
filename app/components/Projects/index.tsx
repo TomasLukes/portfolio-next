@@ -10,11 +10,7 @@ const Projects = (): ReactElement => {
         Projects
       </h2>
       <p className="md:w-4/5 lg:w-3/5 text-left md:text-justify mb-6 md:mb-12">
-        {`
-            Here is a sample of several projects I've had the opportunity to work on and are publicly visible. I always use the latest tech stack, 
-            emphasizing code quality to ensure the website serves for as long as possible. A polished design and accessibility
-            rules are also crucial to me for the best user experience possible.
-          `}
+        {`I've had opportunity to collaborate on many interesting projects but unfortunately not all of them are publicly visible. Here is curated sample of my work.`}
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {projectsData.map((project) => {

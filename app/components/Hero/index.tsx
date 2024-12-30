@@ -21,9 +21,7 @@ const Hero = (): ReactElement => {
         brand tracking and ad tracking software solutions for Behavio Labs.`}
       </p>
       <p className="md:hidden container text-sm mx-auto text-justify mt-3">
-        {`Do I know everything? Far from it. However, I have more than 10 years of experience in
-        technical positions, and if you're looking for a team member with the potential for rapid
-        growth and the ability to learn constantly, keep reading.`}
+        {`While I emphasize modern tech stacks and code quality, first and foremost I'm always searching for ways to bring value to real-life users and businesses through my digital products.`}
       </p>
       <TechStack />
     </section>
