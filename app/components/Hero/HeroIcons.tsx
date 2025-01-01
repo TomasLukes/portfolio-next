@@ -23,7 +23,7 @@ const HeroIcons = (): ReactElement => {
         <Icons.socials.github className="w-6 md:w-8 hover:fill-yellow-500 hover:scale-105" />
       </Link>
       <Link
-        href="mailto:lukest@seznam.cz"
+        href="mailto:info@tomaslukes.com"
         target="_blank"
         aria-label="Contact me at my email address"
       >
